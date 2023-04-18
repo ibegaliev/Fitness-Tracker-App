@@ -8,15 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8CB9E76829EEFEF2000BEF6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9E76729EEFEF2000BEF6E /* AppDelegate.swift */; };
-		8CB9E76A29EEFEF2000BEF6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9E76929EEFEF2000BEF6E /* SceneDelegate.swift */; };
-		8CB9E76C29EEFEF2000BEF6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9E76B29EEFEF2000BEF6E /* ViewController.swift */; };
-		8CB9E76F29EEFEF2000BEF6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB9E76D29EEFEF2000BEF6E /* Main.storyboard */; };
 		8CB9E77229EEFEF2000BEF6E /* Fitness_Tracker_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9E77029EEFEF2000BEF6E /* Fitness_Tracker_App.xcdatamodeld */; };
 		8CB9E77429EEFEF3000BEF6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB9E77329EEFEF3000BEF6E /* Assets.xcassets */; };
 		8CB9E77729EEFEF3000BEF6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB9E77529EEFEF3000BEF6E /* LaunchScreen.storyboard */; };
 		8CB9E78229EEFEF3000BEF6E /* Fitness_Tracker_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9E78129EEFEF3000BEF6E /* Fitness_Tracker_AppTests.swift */; };
 		8CB9E78C29EEFEF3000BEF6E /* Fitness_Tracker_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9E78B29EEFEF3000BEF6E /* Fitness_Tracker_AppUITests.swift */; };
 		8CB9E78E29EEFEF3000BEF6E /* Fitness_Tracker_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9E78D29EEFEF3000BEF6E /* Fitness_Tracker_AppUITestsLaunchTests.swift */; };
+		8CB9E79D29EF008E000BEF6E /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9E79C29EF008E000BEF6E /* TabbarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +37,6 @@
 /* Begin PBXFileReference section */
 		8CB9E76429EEFEF2000BEF6E /* Fitness Tracker App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness Tracker App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB9E76729EEFEF2000BEF6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8CB9E76929EEFEF2000BEF6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8CB9E76B29EEFEF2000BEF6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8CB9E76E29EEFEF2000BEF6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CB9E77129EEFEF2000BEF6E /* Fitness_Tracker_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fitness_Tracker_App.xcdatamodel; sourceTree = "<group>"; };
 		8CB9E77329EEFEF3000BEF6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CB9E77629EEFEF3000BEF6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +46,7 @@
 		8CB9E78729EEFEF3000BEF6E /* Fitness Tracker AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fitness Tracker AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB9E78B29EEFEF3000BEF6E /* Fitness_Tracker_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_Tracker_AppUITests.swift; sourceTree = "<group>"; };
 		8CB9E78D29EEFEF3000BEF6E /* Fitness_Tracker_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_Tracker_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8CB9E79C29EF008E000BEF6E /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				8CB9E76729EEFEF2000BEF6E /* AppDelegate.swift */,
-				8CB9E76929EEFEF2000BEF6E /* SceneDelegate.swift */,
-				8CB9E76B29EEFEF2000BEF6E /* ViewController.swift */,
-				8CB9E76D29EEFEF2000BEF6E /* Main.storyboard */,
+				8CB9E79B29EF0062000BEF6E /* Views */,
+				8CB9E79A29EF004B000BEF6E /* Controllers */,
 				8CB9E77329EEFEF3000BEF6E /* Assets.xcassets */,
 				8CB9E77529EEFEF3000BEF6E /* LaunchScreen.storyboard */,
 				8CB9E77829EEFEF3000BEF6E /* Info.plist */,
@@ -128,6 +123,21 @@
 				8CB9E78D29EEFEF3000BEF6E /* Fitness_Tracker_AppUITestsLaunchTests.swift */,
 			);
 			path = "Fitness Tracker AppUITests";
+			sourceTree = "<group>";
+		};
+		8CB9E79A29EF004B000BEF6E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8CB9E79C29EF008E000BEF6E /* TabbarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8CB9E79B29EF0062000BEF6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +246,6 @@
 			files = (
 				8CB9E77729EEFEF3000BEF6E /* LaunchScreen.storyboard in Resources */,
 				8CB9E77429EEFEF3000BEF6E /* Assets.xcassets in Resources */,
-				8CB9E76F29EEFEF2000BEF6E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CB9E76C29EEFEF2000BEF6E /* ViewController.swift in Sources */,
 				8CB9E76829EEFEF2000BEF6E /* AppDelegate.swift in Sources */,
+				8CB9E79D29EF008E000BEF6E /* TabbarController.swift in Sources */,
 				8CB9E77229EEFEF2000BEF6E /* Fitness_Tracker_App.xcdatamodeld in Sources */,
-				8CB9E76A29EEFEF2000BEF6E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +309,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8CB9E76D29EEFEF2000BEF6E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8CB9E76E29EEFEF2000BEF6E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8CB9E77529EEFEF3000BEF6E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
