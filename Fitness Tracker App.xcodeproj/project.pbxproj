@@ -15,6 +15,12 @@
 		8CB9E78C29EEFEF3000BEF6E /* Fitness_Tracker_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9E78B29EEFEF3000BEF6E /* Fitness_Tracker_AppUITests.swift */; };
 		8CB9E78E29EEFEF3000BEF6E /* Fitness_Tracker_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9E78D29EEFEF3000BEF6E /* Fitness_Tracker_AppUITestsLaunchTests.swift */; };
 		8CB9E79D29EF008E000BEF6E /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9E79C29EF008E000BEF6E /* TabbarController.swift */; };
+		8CC0076429EFA998009E6709 /* ImagesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0076329EFA998009E6709 /* ImagesList.swift */; };
+		8CC1746F29EF2FE800A7C505 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8CC1746E29EF2FE800A7C505 /* SnapKit */; };
+		8CC1747429EF307E00A7C505 /* ViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC1747329EF307E00A7C505 /* ViewDelegate.swift */; };
+		8CC1747829EF31CC00A7C505 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC1747729EF31CC00A7C505 /* TabbarView.swift */; };
+		8CC1747A29EF339500A7C505 /* TabbarIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC1747929EF339500A7C505 /* TabbarIcons.xcassets */; };
+		8CC7CD4A29EFA47B0009AB86 /* IconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC7CD4929EFA47B0009AB86 /* IconManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,11 @@
 		8CB9E78B29EEFEF3000BEF6E /* Fitness_Tracker_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_Tracker_AppUITests.swift; sourceTree = "<group>"; };
 		8CB9E78D29EEFEF3000BEF6E /* Fitness_Tracker_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_Tracker_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8CB9E79C29EF008E000BEF6E /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		8CC0076329EFA998009E6709 /* ImagesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesList.swift; sourceTree = "<group>"; };
+		8CC1747329EF307E00A7C505 /* ViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDelegate.swift; sourceTree = "<group>"; };
+		8CC1747729EF31CC00A7C505 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		8CC1747929EF339500A7C505 /* TabbarIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabbarIcons.xcassets; sourceTree = "<group>"; };
+		8CC7CD4929EFA47B0009AB86 /* IconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CC1746F29EF2FE800A7C505 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,8 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				8CB9E76729EEFEF2000BEF6E /* AppDelegate.swift */,
+				8CC7CD4829EFA46C0009AB86 /* Image Manager */,
+				8CC1747229EF306B00A7C505 /* Pros */,
 				8CB9E79B29EF0062000BEF6E /* Views */,
-				8CB9E79A29EF004B000BEF6E /* Controllers */,
+				8CB9E79A29EF004B000BEF6E /* App */,
 				8CB9E77329EEFEF3000BEF6E /* Assets.xcassets */,
 				8CB9E77529EEFEF3000BEF6E /* LaunchScreen.storyboard */,
 				8CB9E77829EEFEF3000BEF6E /* Info.plist */,
@@ -125,12 +139,12 @@
 			path = "Fitness Tracker AppUITests";
 			sourceTree = "<group>";
 		};
-		8CB9E79A29EF004B000BEF6E /* Controllers */ = {
+		8CB9E79A29EF004B000BEF6E /* App */ = {
 			isa = PBXGroup;
 			children = (
-				8CB9E79C29EF008E000BEF6E /* TabbarController.swift */,
+				8CC1747629EF318B00A7C505 /* Tabbar */,
 			);
-			path = Controllers;
+			path = App;
 			sourceTree = "<group>";
 		};
 		8CB9E79B29EF0062000BEF6E /* Views */ = {
@@ -138,6 +152,33 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		8CC1747229EF306B00A7C505 /* Pros */ = {
+			isa = PBXGroup;
+			children = (
+				8CC1747329EF307E00A7C505 /* ViewDelegate.swift */,
+			);
+			path = Pros;
+			sourceTree = "<group>";
+		};
+		8CC1747629EF318B00A7C505 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				8CC1747729EF31CC00A7C505 /* TabbarView.swift */,
+				8CB9E79C29EF008E000BEF6E /* TabbarController.swift */,
+				8CC1747929EF339500A7C505 /* TabbarIcons.xcassets */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		8CC7CD4829EFA46C0009AB86 /* Image Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8CC7CD4929EFA47B0009AB86 /* IconManager.swift */,
+				8CC0076329EFA998009E6709 /* ImagesList.swift */,
+			);
+			path = "Image Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +197,9 @@
 			dependencies = (
 			);
 			name = "Fitness Tracker App";
+			packageProductDependencies = (
+				8CC1746E29EF2FE800A7C505 /* SnapKit */,
+			);
 			productName = "Fitness Tracker App";
 			productReference = 8CB9E76429EEFEF2000BEF6E /* Fitness Tracker App.app */;
 			productType = "com.apple.product-type.application";
@@ -228,6 +272,9 @@
 				Base,
 			);
 			mainGroup = 8CB9E75B29EEFEF2000BEF6E;
+			packageReferences = (
+				8CC1746D29EF2FE800A7C505 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 8CB9E76529EEFEF2000BEF6E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -246,6 +293,7 @@
 			files = (
 				8CB9E77729EEFEF3000BEF6E /* LaunchScreen.storyboard in Resources */,
 				8CB9E77429EEFEF3000BEF6E /* Assets.xcassets in Resources */,
+				8CC1747A29EF339500A7C505 /* TabbarIcons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +319,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CB9E76829EEFEF2000BEF6E /* AppDelegate.swift in Sources */,
+				8CC0076429EFA998009E6709 /* ImagesList.swift in Sources */,
 				8CB9E79D29EF008E000BEF6E /* TabbarController.swift in Sources */,
+				8CC7CD4A29EFA47B0009AB86 /* IconManager.swift in Sources */,
 				8CB9E77229EEFEF2000BEF6E /* Fitness_Tracker_App.xcdatamodeld in Sources */,
+				8CC1747829EF31CC00A7C505 /* TabbarView.swift in Sources */,
+				8CC1747429EF307E00A7C505 /* ViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +658,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8CC1746D29EF2FE800A7C505 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8CC1746E29EF2FE800A7C505 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CC1746D29EF2FE800A7C505 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		8CB9E77029EEFEF2000BEF6E /* Fitness_Tracker_App.xcdatamodeld */ = {
