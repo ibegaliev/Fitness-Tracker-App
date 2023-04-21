@@ -12,10 +12,16 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var bounds: CGRect?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        
+        bounds = UIScreen.main.bounds
+        if let bounds {
+            window = UIWindow(frame: bounds)
+        }
+        window?.rootViewController = TabbarController()
+        window?.makeKeyAndVisible()
         
         return true
     }

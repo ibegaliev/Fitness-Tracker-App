@@ -18,4 +18,8 @@ class TabbarView: UITabBarController {
         
     }
     
+    private func setCustoms() {
+        
+    }
+    
 }

@@ -8,5 +8,5 @@
 import Foundation
 
 enum ImagesList: String {
-    
+    case defualt = "icon"
 }
