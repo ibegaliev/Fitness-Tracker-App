@@ -7,18 +7,18 @@
 
 import UIKit
 
-class TabbarView: UITabBarController {
+class TabbarView: UITabBarController, TabbarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setTabbar()
     }
     
-    private func setTabbar() {
+    func setTabbar() {
         
     }
     
-    private func setCustoms() {
+    func setCustoms() {
         
     }
     
